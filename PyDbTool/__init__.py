@@ -4,13 +4,15 @@
 # @Author  : Prabir Ghosh
 # @Version : 0.1
 #
-# PyDriver
-
+# PyDbTool
+__version__ = "2.0.1"
 
 from cassandra.cluster import Cluster as __Cluster__
 from cassandra.auth import PlainTextAuthProvider as __PlainTextAuthProvider__
 import psycopg2 as __psycopg2__
 import pandas as __pd__
+import sqlite3 as __sql__
+import pymongo as __pm__
 
 
 def __determine_query_type__(query):    
